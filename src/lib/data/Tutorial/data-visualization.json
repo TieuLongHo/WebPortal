@@ -1,0 +1,28 @@
+{
+  "id": "data-visualization",
+  "title": "Data Visualization",
+  "intro": "Learn the fundamentals of data visualization using our API, enabling you to present data in a more engaging and understandable way.",
+  "difficulty": "intermediate",
+  "components": [
+    {
+      "name": "Charts",
+      "description": "Charts are visual representations of data. They can help convey complex information in a straightforward, visual format, making it easier to understand patterns, trends, and outliers.",
+      "functions": "Create, Customize, Update"
+    },
+    {
+      "name": "Datasets",
+      "description": "Datasets are collections of data that the API can process. Understanding how to manipulate datasets is crucial for effective data visualization.",
+      "functions": "Import, Filter, Export"
+    }
+  ],
+  "story": "Visualizing data effectively can make the difference between merely presenting information and truly communicating insights. Our API provides tools for creating dynamic, interactive charts and graphs, allowing users to explore and understand data in depth. From simple bar charts to complex scatter plots, learn how to transform your data into compelling visual stories.",
+  "user_input": {
+    "active": true,
+    "measurement_type": "data points",
+    "unit": "units"
+  },
+  "solution": {
+    "explanation": "By using the API's data visualization components, you can create powerful visual representations of your data. The guide provides step-by-step instructions on how to select the right chart type, customize it to your needs, and dynamically update it based on user interactions or new data.",
+    "code": "void createChart(const std::string& chartType, const DataSet& data) {\\n    Chart* chart = ChartFactory::createChart(chartType);\\n\\n    chart->setData(data);\\n    chart->customizeAppearance();\\n\\n    chart->render();\\n}"
+  }
+}

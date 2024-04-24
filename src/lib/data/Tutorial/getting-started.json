@@ -1,0 +1,23 @@
+{
+  "id": "getting-started",
+  "title": "Getting Started",
+  "intro": "This guide will help you get started with the basics of using the API.",
+  "difficulty": "easy",
+  "components": [
+    {
+      "name": "Components",
+      "description": "Components are the building blocks of the API. They are the objects that you will interact with to get data from the API.",
+      "functions": "Functions"
+    }
+  ],
+  "story": "The API is a powerful tool that allows you to access data from the API and use it in your own applications. The API is built on a RESTful architecture, which means that it uses standard HTTP methods to interact with the API. This guide will help you get started with the basics of using the API.",
+  "user_input": {
+    "active": true,
+    "measurement_type": "temperature",
+    "unit": "C"
+  },
+  "solution": {
+    "explanation": "The API is a powerful tool that allows you to access data from the API and use it in your own applications. The API is built on a RESTful architecture, which means that it uses standard HTTP methods to interact with the API. This guide will help you get started with the basics of using the API.",
+    "code": "void subscribeToTopic(const std::string& topic) {\\n    mosquittopp::mosquitto* client = mosquittopp::mosquitto_new(\"MQTTClient\", true, this);\\n\\n    int rc = mosquittopp::mosquitto_subscribe(client, nullptr, topic.c_str(), 0);\\n    if (rc != MOSQ_ERR_SUCCESS) {\\n      std::cerr << \"Failed to subscribe to topic: \" << topic << std::endl;\\n      return;\\n    }\\n}"
+  }
+}
