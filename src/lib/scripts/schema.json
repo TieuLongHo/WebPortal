@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": { "type": "string" },
+      "title": { "type": "string" },
+      "intro": { "type": "string" },
+      "difficulty": { "type": "string", "enum": ["easy", "intermediate", "hard"] },
+      "components": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "functions": { "type": "string" }
+          },
+          "required": ["name", "description", "functions"]
+        }
+      },
+      "story": { "type": "string" },
+      "user_input": {
+        "type": "object",
+        "properties": {
+          "active": { "type": "boolean" },
+          "measurement_type": { "type": "string" },
+          "unit": { "type": "string" }
+        },
+        "required": ["active", "measurement_type", "unit"]
+      },
+      "solution": {
+        "type": "object",
+        "properties": {
+          "explanation": { "type": "string" },
+          "code": { "type": "string" }
+        },
+        "required": ["explanation", "code"]
+      }
+    },
+    "required": ["id", "title", "intro", "difficulty", "components", "story", "user_input", "solution"]
+  }
+  

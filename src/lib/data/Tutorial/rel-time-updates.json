@@ -1,0 +1,28 @@
+{
+    "id": "real-time-updates",
+    "title": "Real-Time Updates",
+    "intro": "This section teaches you how to handle real-time data updates, ensuring your application can process and display data as it happens.",
+    "difficulty": "hard",
+    "components": [
+        {
+            "name": "WebSocket",
+            "description": "WebSocket provides full-duplex communication channels over a single TCP connection, allowing for real-time data flow between the client and server.",
+            "functions": "Connect, Send, Receive"
+        },
+        {
+            "name": "Event Listener",
+            "description": "Event listeners respond to events triggered by real-time data updates, ensuring your application can react dynamically to new information.",
+            "functions": "AddListener, RemoveListener"
+        }
+    ],
+    "story": "In today’s fast-paced digital environment, being able to handle real-time data is crucial. Whether it’s tracking stock prices, monitoring IoT devices, or updating live sports scores, our API provides the necessary tools to ensure your application stays up-to-date with the latest data without delay.",
+    "user_input": {
+        "active": false,
+        "measurement_type": "events",
+        "unit": "messages"
+    },
+    "solution": {
+        "explanation": "Leveraging WebSockets and event listeners, you can establish a real-time data pipeline for your application. This guide walks you through setting up a WebSocket connection, subscribing to data channels, and implementing event listeners to process and visualize data as it arrives.",
+        "code": "void setupRealTimeConnection() {\\n    WebSocketClient client(\"ws://example.com/realtime\");\\n\\n    client.on('message', handleMessage);\\n\\n    client.connect();\\n}\\n\\nvoid handleMessage(const Message& message) {\\n    // Process and display the message\\n}"
+    }
+}

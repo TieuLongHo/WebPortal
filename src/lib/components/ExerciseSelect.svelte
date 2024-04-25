@@ -1,5 +1,5 @@
 <script lang="ts">
-	import data from '../data/tutorials.json';
+	import data from '../data/combined-tutorials.json';
 
 	let tutorial = data.tutorials;
 </script>

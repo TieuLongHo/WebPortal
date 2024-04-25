@@ -1,16 +1,15 @@
 <script lang="ts">
 	import Codeblock from '../placeholder/Codeblock.svelte';
 	import Lorem from '../placeholder/Lorem.svelte';
-	import {Accordion, AccordionItem, getModalStore, ModalSettings} from '@skeletonlabs/skeleton';
+	import { Modal, getModalStore } from '@skeletonlabs/skeleton';
+	import type { ModalSettings, ModalComponent, ModalStore } from '@skeletonlabs/skeleton';
 
 	const modalStore = getModalStore();
 
 	const modal: ModalSettings = {
 		type: 'confirm',
-		// Data
 		title: 'Please Confirm',
 		body: 'Are you sure you wish to unlock the Solution?',
-		// TRUE if confirm pressed, FALSE if cancel pressed
 		response: (r: boolean) => (disabled = r)
 	};
 

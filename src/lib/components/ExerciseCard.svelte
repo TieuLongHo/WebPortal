@@ -6,10 +6,7 @@
 	import Solution from './exerciseComponents/Solution.svelte';
 	import Story from './exerciseComponents/Story.svelte';
 	export let exercise: string;
-	import data from '../data/tutorials.json';
-
-	console.log('data.tutorials:', data.tutorials);
-	console.log('exercise:', exercise);
+	import data from '../data/combined-tutorials.json';
 
 	interface Tutorial {
 		id: string;

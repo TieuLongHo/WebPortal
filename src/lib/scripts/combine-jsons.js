@@ -26,7 +26,7 @@ async function combineJsonFiles(directoryPath, outputFilePath) {
     }
 }
 
-const directoryPath = '../data/Tutorial';
-const outputFilePath = '../data/combined-tutorials.json';
+const directoryPath = 'src/lib/data/Tutorial';
+const outputFilePath = 'src/lib/data/combined-tutorials.json';
 
 combineJsonFiles(directoryPath, outputFilePath);
