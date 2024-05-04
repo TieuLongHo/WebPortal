@@ -11,11 +11,9 @@
         "items": {
           "type": "object",
           "properties": {
-            "name": { "type": "string" },
-            "description": { "type": "string" },
-            "functions": { "type": "string" }
+            "name": { "type": "string" }
           },
-          "required": ["name", "description", "functions"]
+          "required": ["name"]
         }
       },
       "story": { "type": "string" },

@@ -1,0 +1,5 @@
+{
+    "name": "WebSocket",
+    "description": "WebSocket provides full-duplex communication channels over a single TCP connection, allowing for real-time data flow between the client and server.",
+    "functions": "Connect, Send, Receive"
+}

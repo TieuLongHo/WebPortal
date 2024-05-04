@@ -1,0 +1,25 @@
+{
+    "id": "machine-learning",
+    "title": "Machine Learning Basics",
+    "intro": "Dive into the fundamentals of machine learning and understand how algorithms can learn from data to make predictions and decisions.",
+    "difficulty": "easy",
+    "components": [
+      {
+        "name": "Models"
+      },
+      {
+        "name": "Feature Engineering"
+      }
+    ],
+    "story": "Machine learning is revolutionizing industries by enabling computers to learn from data and make intelligent decisions. Explore the basics of machine learning algorithms and techniques, and learn how to build predictive models that can solve real-world problems.",
+    "user_input": {
+      "active": true,
+      "measurement_type": "samples",
+      "unit": "instances"
+    },
+    "solution": {
+      "explanation": "By mastering machine learning basics, you gain the ability to build predictive models that can analyze data and make informed decisions. This guide provides a foundation for understanding key concepts and applying them to various domains.",
+      "code": "void trainModel(const DataSet& trainingData) {\\n    Model* model = ModelFactory::createModel('LogisticRegression');\\n\\n    model->train(trainingData);\\n\\n    model->evaluate();\\n}"
+    }
+  }
+  

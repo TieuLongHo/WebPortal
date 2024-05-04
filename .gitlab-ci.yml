@@ -1,33 +1,38 @@
 stages:
-  - validate
+  - validate_and_combine
   - deploy
 
-before_script:
-  - '[[ -d .git ]] && git fetch --quiet origin --depth=1 --update-shallow || exit 0'
-  - 'PREVIOUS_COMMIT=$(git rev-parse origin/${CI_DEFAULT_BRANCH}) || PREVIOUS_COMMIT=${CI_COMMIT_BEFORE_SHA}'
-  - 'CHANGED_JSON_FILES=$(git diff --name-only ${PREVIOUS_COMMIT} ${CI_COMMIT_SHA} -- src/lib/data/Tutorial/*.json)'
-
-json_validation:
-  stage: validate
-  image: node:14
+validate_and_combine_component:
+  stage: validate_and_combine
   script:
-    - cd src/lib/scripts
-    - npm install ajv
-    - if [[ -n "$CHANGED_JSON_FILES" ]]; then node json-validator.js src/lib/data/Tutorial; fi
-  rules:
-    - changes:
-        - src/lib/scripts/json-validator.js
-        - src/lib/scripts/schema.json
-    - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "master"'
+    - node scripts/json-validator.js component
+    - node scripts/combine-jsons.js component
+  tags:
+    - linux
+  only:
+    - develop
 
-deploy:
+validate_and_combine_tutorial:
+  stage: validate_and_combine
+  script:
+    - node scripts/json-validator.js tutorial
+    - node scripts/combine-jsons.js tutorial
+  tags:
+    - linux
+  only:
+    - develop
+
+deploy_to_production:
   stage: deploy
-  image: docker:latest
-  services:
-    - docker:dind
   script:
-    - docker pull your-docker-image:tag
-    - docker run --rm your-docker-image:tag /bin/bash -c "cd /path/to/directory && ./your-script.sh"
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "master"'
-    - when: on_success
+    - git checkout -b production
+    - git add .
+    - git commit -m "Automated deployment commit"
+    - git push origin production
+  tags:
+    - linux
+  dependencies:
+    - validate_and_combine_component
+    - validate_and_combine_tutorial
+  only:
+    - develop

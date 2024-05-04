@@ -5,14 +5,10 @@
   "difficulty": "intermediate",
   "components": [
     {
-      "name": "Charts",
-      "description": "Charts are visual representations of data. They can help convey complex information in a straightforward, visual format, making it easier to understand patterns, trends, and outliers.",
-      "functions": "Create, Customize, Update"
+      "name": "Charts"
     },
     {
-      "name": "Datasets",
-      "description": "Datasets are collections of data that the API can process. Understanding how to manipulate datasets is crucial for effective data visualization.",
-      "functions": "Import, Filter, Export"
+      "name": "Datasets"
     }
   ],
   "story": "Visualizing data effectively can make the difference between merely presenting information and truly communicating insights. Our API provides tools for creating dynamic, interactive charts and graphs, allowing users to explore and understand data in depth. From simple bar charts to complex scatter plots, learn how to transform your data into compelling visual stories.",

@@ -5,9 +5,7 @@
   "difficulty": "easy",
   "components": [
     {
-      "name": "Components",
-      "description": "Components are the building blocks of the API. They are the objects that you will interact with to get data from the API.",
-      "functions": "Functions"
+      "name": "Components"
     }
   ],
   "story": "The API is a powerful tool that allows you to access data from the API and use it in your own applications. The API is built on a RESTful architecture, which means that it uses standard HTTP methods to interact with the API. This guide will help you get started with the basics of using the API.",

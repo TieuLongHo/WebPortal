@@ -1,0 +1,5 @@
+{
+    "name": "Feature Engineering",
+    "description": "Feature engineering involves transforming raw data into meaningful features that can improve model performance. It includes tasks like normalization, encoding, and selection.",
+    "functions": "Preprocess, Transform, Select"
+}

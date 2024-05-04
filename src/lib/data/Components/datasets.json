@@ -1,0 +1,6 @@
+
+{
+    "name": "Datasets",
+    "description": "Datasets are collections of data that the API can process. Understanding how to manipulate datasets is crucial for effective data visualization.",
+    "functions": "Import, Filter, Export"
+}

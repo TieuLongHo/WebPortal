@@ -5,14 +5,10 @@
     "difficulty": "hard",
     "components": [
         {
-            "name": "WebSocket",
-            "description": "WebSocket provides full-duplex communication channels over a single TCP connection, allowing for real-time data flow between the client and server.",
-            "functions": "Connect, Send, Receive"
+            "name": "WebSocket"
         },
         {
-            "name": "Event Listener",
-            "description": "Event listeners respond to events triggered by real-time data updates, ensuring your application can react dynamically to new information.",
-            "functions": "AddListener, RemoveListener"
+            "name": "Event Listener"
         }
     ],
     "story": "In today’s fast-paced digital environment, being able to handle real-time data is crucial. Whether it’s tracking stock prices, monitoring IoT devices, or updating live sports scores, our API provides the necessary tools to ensure your application stays up-to-date with the latest data without delay.",

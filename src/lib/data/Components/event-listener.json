@@ -1,0 +1,5 @@
+{
+    "name": "Event Listener",
+    "description": "Event listeners respond to events triggered by real-time data updates, ensuring your application can react dynamically to new information.",
+    "functions": "AddListener, RemoveListener"
+}

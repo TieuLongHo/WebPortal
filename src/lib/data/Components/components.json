@@ -1,0 +1,5 @@
+{
+    "name": "Components",
+    "description": "Components are the building blocks of the API. They are the objects that you will interact with to get data from the API.",
+    "functions": "Functions"
+}

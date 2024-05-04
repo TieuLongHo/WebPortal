@@ -1,0 +1,39 @@
+{
+  "components": [
+    {
+      "name": "Charts",
+      "description": "Charts are visual representations of data. They can help convey complex information in a straightforward, visual format, making it easier to understand patterns, trends, and outliers.",
+      "functions": "Create, Customize, Update"
+    },
+    {
+      "name": "Components",
+      "description": "Components are the building blocks of the API. They are the objects that you will interact with to get data from the API.",
+      "functions": "Functions"
+    },
+    {
+      "name": "Datasets",
+      "description": "Datasets are collections of data that the API can process. Understanding how to manipulate datasets is crucial for effective data visualization.",
+      "functions": "Import, Filter, Export"
+    },
+    {
+      "name": "Event Listener",
+      "description": "Event listeners respond to events triggered by real-time data updates, ensuring your application can react dynamically to new information.",
+      "functions": "AddListener, RemoveListener"
+    },
+    {
+      "name": "Feature Engineering",
+      "description": "Feature engineering involves transforming raw data into meaningful features that can improve model performance. It includes tasks like normalization, encoding, and selection.",
+      "functions": "Preprocess, Transform, Select"
+    },
+    {
+      "name": "Models",
+      "description": "Machine learning models are algorithms that can learn patterns and relationships from data. They are used for tasks like classification, regression, and clustering.",
+      "functions": "Train, Evaluate, Predict"
+    },
+    {
+      "name": "WebSocket",
+      "description": "WebSocket provides full-duplex communication channels over a single TCP connection, allowing for real-time data flow between the client and server.",
+      "functions": "Connect, Send, Receive"
+    }
+  ]
+}

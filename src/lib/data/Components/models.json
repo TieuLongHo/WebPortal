@@ -1,0 +1,5 @@
+{
+    "name": "Models",
+    "description": "Machine learning models are algorithms that can learn patterns and relationships from data. They are used for tasks like classification, regression, and clustering.",
+    "functions": "Train, Evaluate, Predict"
+  }
